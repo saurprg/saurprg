@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>saur_prg</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="icons/icon1.png">
+        <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da|Fredoka+One|Lobster|Luckiest+Guy|Ultra&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Homemade+Apple|Satisfy&display=swap" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Mandali|Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav  class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                        <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand brand-name" href="#intro" title="saur_prg">SAUR_PRG</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navnames nav navbar-nav navbar-right ">
+                          <li><a href="#home">HOME</a></li>
+                          <li><a href="#about">ABOUT</a></li>
+                          <li><a href="#skills">SKILLS</a></li>
+                          <li><a href="#contact">CONTACT</a></li> 
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="home" class="jumbotron text-center">
+                <div class = "txt-h2" >HI, I'M</div>
+                <div class= "name txt-h1">SAURABH TALMALE</div>
+                <div class ="txt-h3">ENGINEER * PROGRAMMER * LEARNER</div>
+    
+            <!--MODAL CODE STRATS HERE -->
+            
+            <button type="button" class="btn btn-primary btn-lg mdl-btn" data-toggle="modal" data-target="#myModal">Know More</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" roles="dialog">
+                <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="text-center modal-title">About Me</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center row">
+                                <img class="img-circle" src="icons/knowmore.jpg" alt="me" width="300" height="300">
+                            </div>
+                            <div class="row text-center">
+                                <h3 class="pre1">
+                                    Hi , I'm Saurabh Talmale
+                                </h3>
+                                <p class ="text-center pre1">
+                                 Shri Ramdeobaba College Of Engineering
+                                    <br/>Date of Birth : 13/03/1999
+                                    <br/>Email : talmalesa@rknec.edu
+                                    <br />Resume : <a href="resume-6108e4a45dab11e9a94406f311208558.pdf">resume.pdf</a> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--MODAL ENDS HERE-->
+
+            <div class="text-center">
+                <ul class="profiles">
+                    <li class="im-links"><a title="github profile" href="https://github.com/saurprg"><img height="60" width="60" alt="github" src="icons/GitHub-Mark-Light-120px-plus.png "/></a></li>
+                    <li class="im-links"><a title="linkedin profile" href="https://www.linkedin.com/in/saurabh-talmale-639861157/"><img class="img-circle"height="60" width="60" alt="linkdin" src="icons/linkdin.png"/></a></li>
+                    <li class="im-links"><a title="codechef profile" href="https://www.codechef.com/users/saur_prg"><img class="img-circle" height="60" width="60" alt="codechef" src="icons/codechef.jpg"/></a></li>
+                </ul>
+            </div>
+            
+            <!--CAROUSEL FOR QUOTES-->
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                      <h4 class="txt-h4">"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."<br><span class = "author" style="font-style:normal;">-- Albert Einstein</span></h4>
+                      </div>
+                      <div class="item">
+                        <h4 class="txt-h4">"Be the change that you want to see in the world."<br><span class = "author" style="font-style:normal;">-- Mahatma Gandhi</span></h4>
+                      </div>
+                      <div class="item">
+                        <h4 class="txt-h4">"You have to dream before your dream can come true."<br><span class = "author" style="font-style:normal;"> -- Dr A.P.J. Abdul Kalam </span></h4>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <!--Ends here-->
+        </div>
+
+        <!--ABOUT-->
+        <div id="about" class="about">
+            <div class="abt-head text-center">
+                <div class="txt-h1">ABOUT</div>
+            </div>
+            <div class="about-desc">
+                        Hey, It's Saurabh Talmale (saur_prg) .Currently, I am doing my under-grad study at 
+                        Shri Ramdeobaba College of engineering and management in Computer Science and Engineering.
+                        And this my personal website.<br/><br/>
+                            I was introduced to computer when I was about 10 year old ever since computers
+                        have always facinated me in every possible ways.I was introduced computer programming quite 
+                        late yet I believe and pursue it my hobby and something which I love doing.<br/><br/>
+                            Being a fan of Problem Solving and Algorithms I do competative programming
+                        on online-plaforms such as codechef , hackererath etc. I have Represented my college at 
+                        ACM-ICPC(Inter Collegiate Programming Competition) Regionals at Kolkata-Kanpur & Gwalior-Pune sites.
+                        ICPC is also known as olympics of programming world wide.
+            </div>
+        </div>
+        
+        <!--SKILLS STARTS-->
+        <div id="skills" class="skills">
+            <div class="skill-head txt-h1 text-center">
+                SKILLS
+            </div>
+            <div class="text-center skl-intro">
+                Here are Some of my skills and Programming Languages that I have developed
+            </div>
+            <div class="container">
+                    <div class="row ">
+                            <div class="progress">
+                                <div class="progress-bar" style="width:70%; background:#e95095;">
+                                    <h3 class="progress-title">JAVA</h3>
+                                    <div class="progress-value">70%</div>
+                                </div>
+                            </div>
+                 
+                            <div class="progress yellow">
+                                <div class="progress-bar" style="width:80%; background:#ffcc00;">
+                                    <h3 class="progress-title">C++</h3>
+                                    <div class="progress-value">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress green">
+                                    <div class="progress-bar" style="width:85%; background:#5fad56;">
+                                        <h3 class="progress-title">DATA STRUCTURE</h3>
+                                        <div class="progress-value">85%</div>
+                                    </div>
+                            </div>
+
+                            <div class="progress blue">
+                                    <div class="progress-bar" style="width:75%; background:#7049ba;">
+                                        <h3 class="progress-title">Python</h3>
+                                        <div class="progress-value">75%</div>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="txt-h3 text-center">
+                While (Alive) : Code() 
+            </div>
+
+        </div>
+
+        <!--CONATACT ME-->
+        <div id="contact" class="contact">
+
+                <div class="container-fluid container-contact">
+                        <h2 class="text-center txt-h1 con-head">CONTACT ME</h2>
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <p>Details</p>
+                            <p><span class="glyphicon glyphicon-map-marker"></span>  Nagpur,Maharashtra,India</p>
+                            <p><span class="glyphicon glyphicon-phone"></span> +91 9545330851</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span>  talmalesa@rknec.edu</p>
+                          </div>
+                          <div class="col-sm-7">
+                            <div class="row">
+                              <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
+                              </div>
+                              <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Your Email" type="email" required>
+                              </div>
+                            </div>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+                            <div class="row">
+                              <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send</button>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+
+        </div>
+
+    </body>
+    <footer class="container-fluid text-center">
+            <a href="#home" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        <p id="madeby">Created By Saurabh Talmale(saur_prg)<br/>
+            <a href="mailto:talmalesa@rknec.edu" title="mail me">talmalesa@rknec.edu</a></p>     
+    </footer>
+</html>

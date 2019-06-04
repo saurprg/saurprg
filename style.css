@@ -1,0 +1,293 @@
+/* navbar css */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #b3262677;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar-brand{
+    font-size: 3rem;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #00000077 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+/* ends here */
+
+/*for home jumbtron*/
+
+.jumbotron{
+    padding-top:120px;
+    padding-bottom: 30px;
+    margin-bottom : 0px;
+    color: White;
+    background: url(icons/backgroung-home.jpg);
+}
+
+.modal{
+    color: black;    
+}
+
+.modal-body{
+    color: black;
+}
+
+.pre1{
+    color: black;
+}
+/*for home jumbotron ends here */
+
+.txt-h2{
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+}
+
+.name{
+    text-shadow: 3px 3px #7c0909;
+}
+
+.txt-h1{
+    font-size: 7rem;
+    font-family: 'Fugaz One', cursive;
+}
+
+.txt-h3{
+    font-size: 3rem;
+    font-family: 'El Messiri', sans-serif;
+    color: white;
+}
+
+.profiles{
+    margin-top : 50px;  
+    display :flex;
+    justify-content: center;
+    list-style-type: none;     
+}
+
+.navnames{
+    font-size: 20px;
+    font-family: "Bree Serif";
+}
+
+.mdl-btn{
+    margin-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.im-links{
+   float: left;
+   margin-right: 50px;
+   transition: transform 0.9s;
+}
+
+.im-links:hover{
+    transform: rotateY(360deg);
+}
+
+.abt-head{
+    text-shadow: 3px 3px #ccb5b5; 
+}
+
+.about{
+    background: #8a3030;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.about-desc{
+    color : rgb(235, 212, 212);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;    
+    /* font-family: 'Mandali', sans-serif; */
+    font-size : 3rem;
+    margin-left: 80px;
+    margin-right : 80px;
+}
+
+.skills{
+    background: url(icons/skills-background.jpg);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.skill-head{
+    color : white;
+    text-shadow: 3px 3px #7c0909;
+}
+
+.skl-intro{
+    color : white;  
+    font-size : 3rem;
+}
+
+footer{
+    padding-top : 20px;
+    padding-bottom : 20px;
+}
+
+footer .glyphicon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #8a3030;
+}
+
+.glyphicon:hover{
+    color : rgb(83, 13, 13);
+}
+
+#madeby{
+    font-size: 2rem;
+}
+
+.contact{
+    background: #8a3030;
+    padding-bottom: 40px;
+}
+
+.container-contact{
+    margin-left : 50px;
+    margin-right: 50px;
+}
+
+.con-head{
+    padding-top : 30px;
+    padding-bottom: 30px;
+    text-shadow: 3px 3px #ccb5b5;
+}
+
+.row{
+    color : white;
+}
+
+/* FOR slide show*/
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #04772ace;
+}
+  
+.carousel-indicators li {
+    border-color: #b3262677;
+}
+
+.carousel-indicators li.active {
+    background-color: #b3262677;
+}
+
+.item{
+    font-size: 19px;
+    line-height: 1.375em;
+    font-style: italic;
+    color: #aa2a20b0;
+    margin: 50px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+.txt-h4{
+    font-size : 2.6rem;
+    color : rgb(75, 8, 8);
+    font-family: 'Satisfy', cursive;
+    text-shadow: 1px 1px #111111;
+    font-weight: 700;   
+    /* font-family: 'Great Vibes', cursive;
+    font-family: 'Homemade Apple', cursive; */
+}
+.author{
+    font-family: 'Homemade Apple', cursive; 
+    font-size : 2rem;
+    font-weight: 600;   
+    padding-top : 10px;
+}
+/* ends here */
+/* Progress  starts */
+.container{
+    padding-top : 50px; 
+}
+.progress{
+    height: 50px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50px;
+    box-shadow: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    margin-left : 20px;
+    position: relative;
+    border-radius: 20px;
+    animation: animate-positive 2s;
+}
+.progress .progress-title{
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+.progress .progress-value{
+    width: 45px;
+    height: 33px;
+    line-height: 35px;
+    background: #f5f5f5;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    color: #e95095;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.progress.yellow .progress-value{ color: #ffcc00; }
+.progress.blue .progress-value{ color: #7049ba; }
+.progress.green .progress-value{ color: #5fad56; }
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+/* Ends Here */
+@media (max-width:450px) {
+    .txt-h2 {
+      font-size: 3rem;
+    }
+    .txt-h1 {
+        font-size: 5rem;
+    }
+    .txt-h3 {
+        font-size: 2rem;
+    }
+    .about-desc{
+        font-size: 1.7rem;
+        margin-left: 40px;
+        margin-right : 40px;
+    }
+    .skl-intro{
+        font-size: 2rem;
+    }
+}
