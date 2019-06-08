@@ -26,23 +26,31 @@ $(document).ready(function(){
 
 function _(id){ return document.getElementById(id); }
 function submitForm(){
-	_("send").disabled = true;
-	_("status").innerHTML = 'please wait ...';
-	var formdata = new FormData();
-	formdata.append( "n", _("name").value );
-	formdata.append( "e", _("email").value );
-	formdata.append( "m", _("comments").value );
-	var ajax = new XMLHttpRequest();
-	ajax.open( "POST", "util.php" );
-	ajax.onreadystatechange = function() {
-		if(ajax.readyState == 4 && ajax.status == 200) {
-			if(ajax.responseText == "success"){
-				_("status").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-			} else {
-				_("status").innerHTML = ajax.responseText;
-				_("mybtn").disabled = false;
-			}
-		}
-	}
-	ajax.send();
+  var name=_("name").value;
+  var mail=_('email').value;
+  var comments=_('comments').value;
+  if(mail==="" || name==="" ||comments==="")
+  {
+    _("status").innerHTML = '*fill the form completly...';
+  }else{  
+    _("send").disabled = true;
+    _("status").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent...';
+    var formdata = new FormData();
+    formdata.append( "n", _("name").value );
+    formdata.append( "e", _("email").value );
+    formdata.append( "m", _("comments").value );
+    var ajax = new XMLHttpRequest();
+    ajax.open( "POST", "util.php" );
+    ajax.onreadystatechange = function() {
+      if(ajax.readyState == 4 && ajax.status == 200) {
+        if(ajax.responseText == "success"){
+          _("status").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.</h2>';
+        } else {
+          _("status").innerHTML = ajax.responseText;
+          _("mybtn").disabled = false;
+        }
+      }
+    }
+    ajax.send();
+  }
 }
