@@ -34,7 +34,7 @@ function submitForm(){
     _("status").innerHTML = '*fill the form completly...';
   }else{  
     _("send").disabled = true;
-    _("status").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent...';
+    _("status").innerHTML = 'Thanks '+_("name").value+', your message has been sent...';
     var formdata = new FormData();
     formdata.append( "n", _("name").value );
     formdata.append( "e", _("email").value );
@@ -44,7 +44,7 @@ function submitForm(){
     ajax.onreadystatechange = function() {
       if(ajax.readyState == 4 && ajax.status == 200) {
         if(ajax.responseText == "success"){
-          _("status").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.</h2>';
+          _("status").innerHTML = '<h2>Thanks '+_("name").value+', your message has been sent.';
         } else {
           _("status").innerHTML = ajax.responseText;
           _("mybtn").disabled = false;
