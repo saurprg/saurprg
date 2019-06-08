@@ -29,7 +29,11 @@ function submitForm(){
   var name=_("name").value;
   var mail=_('email').value;
   var comments=_('comments').value;
-  if(mail==="" || name==="" ||comments==="")
+  var service = true;
+  if(service){
+    _("status").innerHTML = 'Currently Service is not available..'
+  }
+  else if(mail==="" || name==="" ||comments==="")
   {
     _("status").innerHTML = '*fill the form completly...';
   }else{  
