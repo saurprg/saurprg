@@ -206,7 +206,7 @@ footer .glyphicon {
     font-size : 2.6rem;
     color : rgb(75, 8, 8);
     font-family: 'Satisfy', cursive;
-    text-shadow: 1px 1px #111111;
+    text-shadow: 0.8px 0.8px #25e29a;
     font-weight: 700;   
     /* font-family: 'Great Vibes', cursive;
     font-family: 'Homemade Apple', cursive; */
@@ -214,7 +214,8 @@ footer .glyphicon {
 .author{
     font-family: 'Homemade Apple', cursive; 
     font-size : 2rem;
-    font-weight: 600;   
+    font-weight: 600;  
+    text-shadow: none;  
     padding-top : 10px;
 }
 /* ends here */
