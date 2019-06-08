@@ -23,3 +23,26 @@ $(document).ready(function(){
     } // End if
   });
 })
+
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("send").disabled = true;
+	_("status").innerHTML = 'please wait ...';
+	var formdata = new FormData();
+	formdata.append( "n", _("name").value );
+	formdata.append( "e", _("email").value );
+	formdata.append( "m", _("comments").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "util.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("status").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send();
+}
